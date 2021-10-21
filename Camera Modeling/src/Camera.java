@@ -17,7 +17,8 @@ public class Camera {
     }
 
     public Camera() {
-
+        this.manufacturer = "Default";
+        this.model = "Default";
     }
 
     public String getManufacturer() {

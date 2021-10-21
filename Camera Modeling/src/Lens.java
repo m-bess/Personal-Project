@@ -6,17 +6,76 @@ public class Lens {
     private String manufacturer;
     private boolean primeLens;
     private boolean zoomLens;
-    private int focalLength;
-    private List<BigDecimal> aperture = new ArrayList<>();
-    private boolean isLensCapOn;
+    private int minZoom;
+    private int maxZoom;
+    private boolean lensCapOn;
     private boolean isAttached;
 
-    public Lens(String manufacturer){
+    public List<BigDecimal> aperture = new ArrayList<>();
 
+
+    public Lens(String manufacturer, int minZoom, int maxZoom, boolean primeLens, boolean zoomLens){
+        this.manufacturer = manufacturer;
+        this.minZoom = minZoom;
+        this.maxZoom = maxZoom;
+        if(primeLens){
+            zoomLens = false;
+        }
+        if(zoomLens){
+            primeLens = false;
+        }
+        lensCapOn = true;
+        isAttached = false;
     }
 
-    //Need a list of Aperture settings
+    public Lens(){
+        this.manufacturer = "Default";
+        this.lensCapOn = true;
+        this.isAttached = false;
+    }
 
-    //Create all lenses as children of Lens
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public boolean isPrimeLens() {
+        return primeLens;
+    }
+
+    public boolean isZoomLens() {
+        return zoomLens;
+    }
+
+    public int getMinZoom() {
+        return minZoom;
+    }
+
+    public int getMaxZoom() {
+        return maxZoom;
+    }
+
+    public boolean isLensCapOn() {
+        return lensCapOn;
+    }
+
+    public boolean isAttached() {
+        return isAttached;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public void setMinZoom(int minZoom) {
+        this.minZoom = minZoom;
+    }
+
+    public void setMaxZoom(int maxZoom) {
+        this.maxZoom = maxZoom;
+    }
+
+    //Need a list of Aperture settings with List
+
+
 
 }

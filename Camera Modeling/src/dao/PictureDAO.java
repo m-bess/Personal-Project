@@ -1,7 +1,8 @@
 package dao;
 
 public interface PictureDAO {
-    //methods to add picture taken to PictureAppDB
+    //how do I import JdbcTemplate? Spring Framework won't import...
+    //methods to add picture information to PictureAppDB
 
 
 }

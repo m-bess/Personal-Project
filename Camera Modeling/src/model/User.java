@@ -2,6 +2,8 @@ package model;
 
 public class User {
 
+    //User class to log in. DB holds login information and links user_id to camera equipment and pictures
+
     private long id;
     private String username;
 

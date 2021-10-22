@@ -1,3 +1,5 @@
+package hardware;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +13,7 @@ public class Lens {
     private boolean lensCapOn;
     private boolean isAttached;
 
-    public List<BigDecimal> aperture = new ArrayList<>();
+    public List<BigDecimal> apertureSettings = new ArrayList<>();
 
 
     public Lens(String manufacturer, int minZoom, int maxZoom, boolean primeLens, boolean zoomLens){
@@ -75,6 +77,8 @@ public class Lens {
     }
 
     //Need a list of Aperture settings with List
+
+
 
 
 

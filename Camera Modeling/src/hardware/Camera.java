@@ -1,3 +1,5 @@
+package hardware;
+
 public class Camera {
     private String manufacturer;
     private String model;

@@ -1,3 +1,6 @@
+import hardware.Camera;
+import hardware.Lens;
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,6 +1,8 @@
 package hardware;
 
 public class Camera {
+    private static final double BATTERY_DRAIN = 0.25;
+
     private String manufacturer;
     private String model;
     private String serialNumber;
@@ -68,6 +70,7 @@ public class Camera {
     public void takePicture() {
         if(isOn && lensAttached()){
             System.out.println("Picture taken!");
+            batteryLevel -= BATTERY_DRAIN;
         }
     }
 

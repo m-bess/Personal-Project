@@ -2,6 +2,8 @@ package hardware;
 
 public class Battery {
 
+    //Does this class make sense or should I just move it into the camera class?
+
     private static final int BATTERY_USED_TO_TAKE_PICTURE = 1;
     private static final int LOW_BATTERY = 10;
 
@@ -25,6 +27,4 @@ public class Battery {
             System.out.println("Battery is dead. You should have listened!");
         }
     }
-
-
 }

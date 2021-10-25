@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PictureAppCLI {
 
     //Should I follow the VendingMachineCLI pattern and declare methods in a PictureApp class? Or put everything directly in the CLI like the recent exercises?
-    //I'm leaning toward creating a PictureApp class
+    //I'm leaning toward creating a dedicated class...
 
     public static void main(String[] args) {
 

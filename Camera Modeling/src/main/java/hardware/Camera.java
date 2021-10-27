@@ -67,13 +67,6 @@ public class Camera {
         isOn = false;
     }
 
-    public void takePicture() {
-        if(isOn && lensAttached()){
-            System.out.println("Picture taken!");
-            batteryLevel -= BATTERY_DRAIN;
-        }
-    }
-
     public void changeLens() {
 
     }

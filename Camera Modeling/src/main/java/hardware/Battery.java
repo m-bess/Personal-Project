@@ -5,10 +5,10 @@ public class Battery {
     //Does this class make sense or should I just move it into the camera class?
 
     private static final int BATTERY_USED_TO_TAKE_PICTURE = 1;
-    private static final int LOW_BATTERY = 10;
+    private static final int LOW_BATTERY = 50;
 
 
-    private int batteryLevel = 100;
+    private int batteryLevel = 1000;
     private int lowBattery = LOW_BATTERY;
     private int deadBattery = 0;
 
@@ -18,13 +18,18 @@ public class Battery {
 
     public boolean isBatteryLow() {
         if(batteryLevel == lowBattery) {
-            System.out.println("Battery level is low. You should charge it!");
-        } return true;
+            return true;
+        } return false;
     }
 
     public void batteryDead(){
         if(batteryLevel == deadBattery) {
             System.out.println("Battery is dead. You should have listened!");
         }
+    }
+
+    public int drainBattery() {
+        batteryLevel -= BATTERY_USED_TO_TAKE_PICTURE;
+        return batteryLevel;
     }
 }

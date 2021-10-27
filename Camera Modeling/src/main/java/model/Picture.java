@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 
 public class Picture {
 
+    //picture URL - CDN: URL Class (serializable)
+
     private long pictureId;
     private long userId;
     private int cameraApertureSetting;

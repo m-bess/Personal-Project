@@ -4,6 +4,11 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class instantiates a lens. Each lens has different aperture specifications similar to real-world lenses
+ * 
+ */
+
 public class Lens {
     private String manufacturer;
     private boolean primeLens;

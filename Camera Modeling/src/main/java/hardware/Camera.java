@@ -1,5 +1,11 @@
 package hardware;
 
+/**
+ * This class is used to instantiate a camera. The user can specify the manufacturer and model.
+ * This class utilizes the battery and lens classes to complete a camera setup
+ *
+ */
+
 public class Camera {
     private static final double BATTERY_DRAIN = 0.25;
 

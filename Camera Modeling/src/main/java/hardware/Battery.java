@@ -1,5 +1,10 @@
 package hardware;
 
+/**
+ * This class instantiates a battery, necessary for a camera to function.
+ * Battery drain is a constant that is based on real-world Canon battery function
+ */
+
 public class Battery {
 
     //Does this class make sense or should I just move it into the camera class?

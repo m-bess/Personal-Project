@@ -1,0 +1,44 @@
+body {
+    background: hsl(233, 47%, 7%);
+    font-family: 'Inter', 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+div.card {
+    width: 480px;
+    height: 350px;
+    padding: 25px;
+    background: hsl(244, 38%, 16%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+span.accent {
+    color: hsl(277, 64%, 61%);
+}
+
+p.main-pg {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 20px;
+}
+
+ul.stats {
+    list-style-type: none;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+li.stats-text {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+img {
+    max-width: 480px;
+}
+
+.attribution {
+    color: white;
+}

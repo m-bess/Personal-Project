@@ -20,4 +20,27 @@ public class CameraOS {
         }
     }
 
+    public void run() {
+        printGreeting();
+
+    }
+
+    private void printGreeting() {
+        System.out.println("");
+        System.out.println("*********************************************");
+        System.out.println("Welcome to the Camera Simulation Application!");
+        System.out.println("*********************************************");
+        System.out.println("");
+    }
+
+//    Scanner userInput = new Scanner(System.in); //Prompting user to input information about their equipment. Goal is to create a database that holds this info
+//        System.out.println("What is you camera manufacturer?");
+//    //Utilizing information input by the User to set Camera manufacturer
+//        userCamera.setManufacturer(userInput.nextLine());
+//        if(userCamera.getManufacturer().equalsIgnoreCase("Canon")){
+//        System.out.println("You entered " + userCamera.getManufacturer() + ". Great choice!");
+//    } else if(userCamera.getManufacturer().equalsIgnoreCase("Nikon")){
+//        System.out.println("You entered " + userCamera.getManufacturer() + ". You chose poorly..."); //Might not make me popular with the Nikon users...
+//    }
+
 }

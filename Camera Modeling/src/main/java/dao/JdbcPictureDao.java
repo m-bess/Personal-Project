@@ -1,17 +1,12 @@
-package dao;
+package DAO;
 
 
 
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
-
-import javax.sql.DataSource;
 
 /**
- * Methods to add picture information to PictureAppDB
- * SELECT FROM pictures to view
- * INSERT INTO for new pictures when they are taken
- * DELETE FROM table
+ * This class is the framework to connect the "picture" table to the project
+ * It will hold sql statements to pull from the database and access in the CLI
  */
 
 public class JdbcPictureDao {

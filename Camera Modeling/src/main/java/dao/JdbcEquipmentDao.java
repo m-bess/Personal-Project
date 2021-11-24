@@ -1,14 +1,8 @@
-package dao;
-
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
-
-import javax.sql.DataSource;
+package DAO;
 
 /**
- *  Methods to add equipment information to PictureAppDB. SQL statements will include SELECT equipment to use
- *  INSERT INTO when new equipment is added
- *  DELETE FROM table when equipment is "sold" or "broken"
+ * This class is the framework to connect the equipment table to the project
+ * It will hold sql statements to pull from the database and access in the CLI
  */
 
 public class JdbcEquipmentDao {

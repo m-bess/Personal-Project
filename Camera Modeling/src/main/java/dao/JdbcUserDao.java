@@ -1,13 +1,8 @@
-package dao;
-
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
-
-import javax.sql.DataSource;
+package DAO;
 
 /**
- * Methods to create a user/manage login process
- * INSERT INTO table when new user is created
+ * This class is the framework to connect the user table to the project
+ * It will hold sql statements to pull from the database and access in the CLI
  */
 
 public class JdbcUserDao {
